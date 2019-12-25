@@ -1,0 +1,70 @@
+.new-group-page{
+	display: block;
+	box-sizing: border-box;
+	margin-left: 120px;
+}
+
+.new-group-form-title{
+	display: block;
+    width: 100%;
+    font-size: 26px;
+    padding: 0px 10px;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 2px solid silver;
+    margin-bottom: 20px;
+}
+.new-group-h2{
+	font-size: 20px;
+	margin: 0 0 10px 0;
+}
+.user-box-item{
+	display: block;
+    float: left;
+    width: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 180px;
+    overflow: hidden;
+    border: 1.5px solid #fff;
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-box-item-img-box{
+	
+}
+.user-box-item-img-box > img{
+	display: block;
+    margin: 0px auto 10px;
+    width: 100px;
+    height: 100px;
+}
+.user-box-item-name-box{
+	text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000;
+    height: 42px;
+
+}
+/* когда выбрано */
+.user-box-item.active{
+	border-color: #6eb690;
+
+}
+.user-box-item.active .user-box-item-name-box{
+	
+}
+
+.new-group-submit-button{
+	display: inline-block;
+	text-align: center;
+	padding: 10px 30px;
+	box-sizing: border-box;
+	border: 1.5px solid #6eb690;
+	color: #000;
+	background-color: inherit;
+	font-size: 18px;
+}

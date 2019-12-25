@@ -1,0 +1,147 @@
+.profile-content-page{
+	width: calc(100% - 120px);
+	margin-left: 120px;
+	box-sizing: border-box;
+}
+.profile-contakt-info-box{
+	float: left;
+	width: calc(100% - 350px - 320px);
+}
+.profile-avatar-box{
+	float: left;
+	width: 300px;
+	margin-right: 50px;
+}
+.profile-name{
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.profile-contakt-mail > i,
+.profile-contakt-phone > i{
+	color: #6eb690;
+}
+.profile-contakt-mail,
+.profile-contakt-phone{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.profile-contakt-title{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.user-button-add-contakt{
+	display: block;
+	text-align: center;
+	border: 2px solid #6eb690;
+	padding: 10px;
+	width: 80%;
+	margin: 10px auto;
+	box-sizing: border-box;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+.user-button-add-contakt:hover{
+	background-color: #6eb690;
+	color: #fff;
+}
+.user-button-back-contakt{
+	display: block;
+	text-align: center;
+	border: 2px solid silver;
+	padding: 10px;
+	width: 80%;
+	margin: 10px auto;
+	background-color: silver;
+	box-sizing: border-box;
+}
+.user-button-close-contakt{
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	width: 170px;
+	margin: 10px auto;
+	color: red;
+	border-bottom: 1px solid #fff;
+	transition: border-color 0.3s ease;
+}
+.user-button-close-contakt:hover{
+	border-color: red;
+}
+.user-button-chat{
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	border: 2px solid #6eb690;
+	padding: 10px;
+	width: 80%;
+	margin: 10px auto;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+.user-button-chat:hover{
+	background-color: #6eb690;
+	color: #fff;
+}
+
+.user-button-ok{
+	display: block;
+	float: left;
+	width: 45%;
+	box-sizing: border-box;
+	text-align: center;
+	border: 2px solid #6eb690;
+	color: #6eb690;
+	padding: 10px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+.user-button-ok:hover{
+	background-color: #6eb690;
+	color: #fff;
+}
+.user-button-no{
+	display: block;
+	float: right;
+	width: 45%;
+	box-sizing: border-box;
+	text-align: center;
+	border: 2px solid red;
+	color: red;
+	padding: 10px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+.user-button-no:hover{
+	background-color: red;
+	color: #fff;
+}
+.user-massage-under-photo{
+	margin: 10px auto;
+	font-size: 14px;
+}
+
+.user-tasks-box{
+	float: right;
+	box-sizing: border-box;
+	width: 290px;
+	margin-left: 30px;
+	border-left: 2px solid #6eb690;
+	border-bottom: 2px solid #6eb690;
+	padding: 0 0 20px 20px;
+}
+.user-tasks-table{
+	width: 100%;
+}
+.user-tasks-table tr > td{
+	font-size: 20px;
+	padding: 5px 0;
+	border-bottom: 1px solid silver;
+}
+.user-tasks-table tr:last-child > td{
+	border-bottom: none;
+}
+.user-tasks-h2{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.user-tasks-table-num{
+	text-align: center;
+	width: 100px;
+}

@@ -1,0 +1,65 @@
+.calendar-page{
+	float: left;
+	width: calc(100% - 120px);
+	margin-left: 60px;
+}
+
+
+.calendar-table{
+	width: 100%;
+	max-width: 800px;
+	box-sizing: border-box;
+	border-spacing: 0px;
+}
+.calendar-table  tr > td{
+	height: 100px;
+	box-sizing: border-box;
+	border-bottom: 1px solid silver;
+	border-left: 1px solid silver;
+	vertical-align: top;
+	width: calc(100% / 7);
+}
+.calendar-table  tr > td:first-child{
+	border-left: none;
+}
+.calendar-table  tr > td > a{
+	display: block;
+	padding: 10px;
+	box-sizing: border-box;
+	height: 100%;
+	position: relative;
+}
+.calendar-table-date{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Tahoma;
+}
+
+.calendar-table-reminder{
+	font-size: 9px;
+}
+.calendar-table-nums-box{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+.calendar-table-task-box{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 5px 0px 5px 5px;
+
+}
+.calendar-table-task-box > i {
+	font-size: 18px;
+}
+
+.calendar-table-remindes-box{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	border-right: 1px dotted silver;
+	padding: 5px 5px 5px 0px;
+	text-align: right;
+}

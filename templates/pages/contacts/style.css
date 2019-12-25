@@ -1,0 +1,285 @@
+/* ----- Блок с фильтрами ----- */
+.contact-filter-box{
+	float: right;
+	width: 300px;
+	border-left: 2px solid #6eb690;
+	box-sizing: border-box;
+	padding: 30px 0 0 20px;
+	margin-left: 40px;
+}
+.contact-search-form{
+	position: relative;
+}
+.contact-input-search{
+	border: none;
+	border-bottom: 2px solid #6eb690;
+	color: #000;
+	font-size: 20px;
+	padding: 5px 5px 0 5px;
+	width: 100%;
+}
+.contact-search-link-submit{
+	position: absolute;
+	top: 6px;
+	right: 6px;
+}
+.contact-search-link-submit > i{
+	font-size: 20px;
+	color: silver;
+	transition: color 0.3s ease;
+}
+.contact-search-link-submit:hover > i{
+	color: #6eb690;
+}
+.contact-menu-list{
+	margin-top: 10px;
+}
+.contact-menu-list > li{
+	border-bottom: 2px dotted silver;
+}
+.contact-menu-list > li > a{
+	display: block;
+	font-size: 20px;
+	padding: 10px 0;
+}
+.contact-list-group{
+	padding-left: 10px;
+	padding-bottom: 10px;
+	display: block;
+}
+.contact-list-group > li > a{
+	display: block;
+	padding: 5px 0;
+	font-size: 18px;
+}
+
+.contact-menu-list-group{
+	position: relative;
+}
+.contact-menu-list-group-arrow{
+	position: absolute;
+	display: block;
+	width: 20px;
+	right: 8px;
+	top: 10px;
+	transition: all 0.3s ease;
+}
+.contact-menu-list-group-arrow.active{
+	transform: rotate(90deg);
+	top: 16px;
+	right: 12px;
+}
+/* ----- Основной контент ----- */
+.contact-display{
+	float: left;
+	width: calc(100% - 340px);
+}
+.contact-page{
+	float: left;
+	width: calc(100% - 120px);
+	margin-left: 120px;
+	margin-right: 10px;
+	box-sizing: border-box;
+}
+.contact-item{
+	display: block;
+	float: left;
+	width: 150px;
+	padding: 10px;
+	box-sizing: border-box;
+	height: 160px;
+	overflow: hidden;
+}
+
+.contact-item:hover > .contact-item-buttons-box{
+	top: -54px;
+}
+
+.contact-item-img-box > img{
+	display: block;
+	margin: 0px auto 10px;
+}
+.contact-item-name{
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #000;
+	height: 42px;
+}
+
+.contact-item-buttons-box{
+	position: relative;
+	background-color: #fff;
+	z-index: 10;
+	top: 0px;
+	transition: top 0.5s ease;
+	padding-bottom: 10px;
+}
+.contact-button-yes{
+	display: block;
+	box-sizing: border-box;
+	color: #6eb690;
+	text-align: center;
+	border: 2px solid #6eb690;
+	border-radius: 50%;
+	float: left;
+	font-size: 24px;
+	width: 42px;
+	height: 42px;
+	padding-top: 5px;
+	margin-left: 10px;
+}
+.contact-button-no{
+	display: block;
+	box-sizing: border-box;
+	color: red;
+	text-align: center;
+	border: 2px solid red;
+	border-radius: 50%;
+	float: right;
+	font-size: 24px;
+	width: 42px;
+	height: 42px;
+	padding-top: 5px;
+	margin-right: 10px;
+}
+
+.contacts-new-box{
+	width: 100%;
+	border: 1.5px solid #6eb690;
+	padding: 30px 0px 10px;
+}
+
+.contact-new-title{
+	width: 200px;
+	text-align: center;
+	position: relative;
+	background-color: #fff;
+	left: 20px;
+	bottom: 12px;
+	float: left;
+}
+
+
+.contact-menu-list-new-group{
+	position: relative;
+}
+.contact-menu-list-new-count-group{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 24px;
+	height: 24px;
+	background-color: red;
+	color: #fff;
+	border-radius: 50%;
+	padding-top: 4px;
+	position: absolute;
+	text-align: center;
+	font-size: 16px;
+	right: 10px;
+}
+
+
+/* ------ Форма ------ */
+.popup-form-invite{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+.new-group-invite-close-box{
+	display: block;
+	background-color: #000;
+	opacity: 0.3;
+	z-index: 110;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.new-group-invite-box{
+	position: relative;
+	width: 800px;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 50px;
+	margin: 0px auto 0;
+	z-index: 120;
+}
+.new-group-invite-close{
+	color: silver;
+	border: none;
+	background-color: inherit;
+	position: absolute;
+	right: 12px;
+	top: 10px;
+	font-size: 30px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.new-group-invite-close:hover{
+	color: #000;
+}
+.popup-form-h2{
+	font-size: 24px;
+	margin: 0 auto 20px;
+}
+.popup-form{
+	display: table;
+	width: 100%;
+}
+.popup-form-row{
+	display: table-row;
+}
+.popup-form-column{
+	display: table-cell;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 5px 5px;
+}
+.popup-form-column:first-child{
+	padding-left: 0px;
+}
+.popup-form-column:last-child{
+	padding-right: 0px;
+}
+.popup-form-column > img{
+	display: block;
+	width: 40px;
+}
+.popup-form-agree-button{
+	display: block;
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	border: 1.5px solid #6eb690;
+	border-radius: 50%;
+	color: #6eb690;
+	text-align: center;
+	font-size: 26px;
+	padding-top: 5px;
+	transition: all 0.3s ease;
+}
+.popup-form-agree-button:hover{
+	background-color: #6eb690;
+	color: #fff;
+}
+.popup-form-disagree-button{
+	display: block;
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	border: 1.5px solid red;
+	border-radius: 50%;
+	color: red;
+	text-align: center;
+	font-size: 26px;
+	padding-top: 4px;
+	transition: all 0.3s ease;
+}
+.popup-form-disagree-button:hover{
+	background-color: red;
+	color: #fff;
+}

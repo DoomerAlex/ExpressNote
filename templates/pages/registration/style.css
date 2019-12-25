@@ -1,0 +1,210 @@
+@media screen and (min-width: 800px){
+	.content{
+		background: url(/templates/images/background-img/back.jpg);
+		background-size: cover;
+	}
+	.registration-box{
+		margin: 100px auto 100px;
+		width: 800px;
+		height: 400px;
+	}
+	.registration-box-left{
+		float: left;
+		width: 60%;
+		border-right: 2px solid #6eb690;
+		padding-right: 100px;
+		height: 400px;
+	}
+	.registration-box-right{
+		float: left;
+		width: 40%;
+		padding-left: 50px;
+		height: 400px;
+	}
+	.registration-box-h2{
+		color: #36383a;
+		text-align: left;
+		font-size: 2em;
+		margin-bottom: 40px;
+	}
+	.form-login-input-text{
+		display: block;
+		border: none;
+		border-bottom: 2px solid #6eb690;
+		padding:  10px 10px 2px 10px;
+		width: 100%;
+		font-size: 1.5em;
+		margin-top: 50px;
+		background-color: transparent;
+		color: #36383a;
+	}
+	.registration-box-h2-right{
+		color: #36383a;
+		text-align: right;
+		font-size: 2em;
+		margin-bottom: 30px;
+		font-family: 'Lobster', cursive;
+	}
+	.registration-button,
+	.registration-link-back{
+		font-size: 1.5em;
+		color: #36383a;
+		display: block;
+		width: 150px;
+		text-align: right;
+		margin: 12px 0px 0px auto;
+	}
+
+}
+@media screen and (max-width: 799px){
+	.registration-box{
+		padding: 10px;
+		width: 100%;
+	}
+	.registration-box-left{
+		width: 100%;
+		border-bottom: 2px solid #6eb690;
+		padding-bottom: 20px;
+	}
+	.registration-box-right{
+		float: left;
+		width: 100%;
+	}
+	.registration-box-h2{
+		color: #36383a;
+		text-align: center;
+		font-size: 2em;
+		margin-bottom: 40px;
+	}
+	.form-login-input-text{
+		display: block;
+		border: none;
+		border-bottom: 2px solid #6eb690;
+		padding:  10px 10px 2px 10px;
+		width: 100%;
+		font-size: 1.2em;
+		margin: 50px auto 0px;
+		background-color: transparent;
+		color: #36383a;
+		max-width: 350px;
+	}
+	.registration-box-h2-right{
+		color: #36383a;
+		text-align: center;
+		font-size: 2em;
+		margin-bottom: 30px;
+		margin-top: 20px;
+		font-family: 'Lobster', cursive;
+	}
+	.registration-button,
+	.registration-link-back{
+		font-size: 1.5em;
+		color: #36383a;
+		display: block;
+		width: 150px;
+		text-align: center;
+		margin: 12px auto 0px;
+	}
+}
+
+.registration-forget-password{
+	height: 50px;
+	text-align: center;
+	margin: 50px auto 0px;
+}
+.registration-forget-password > a{
+	color: red;
+	display: none;
+}
+.form-login-submit{
+	display: block;
+	border: none;
+	font-size: 2em;
+	color: #6eb690;
+	background-color: transparent;
+	margin: 0px auto;
+	margin-top: 35px;
+}
+
+
+.registration-box-icons{
+	width: 50%;
+	float: left;
+	margin-bottom: 15px;
+}
+.registration-box-icons-icon{
+	font-size: 3em;
+	color: #6eb690;
+	text-align: center;
+}
+.registration-box-icons-text{
+	font-size: 1em;
+	text-align: center;
+}
+
+.form-login-input-text2{
+	display: block;
+	border: none;
+	border-bottom: 2px solid #6eb690;
+	padding:  10px 10px 2px 10px;
+	width: 100%;
+	font-size: 1em;
+	margin-top: 15px;
+	background-color: transparent;
+	color: #36383a;
+}
+.form-registration-submit{
+	display: block;
+	border: none;
+	font-size: 1.2em;
+	color: #6eb690;
+	background-color: transparent;
+	margin: 0px auto;
+	margin-top: 30px;
+}
+
+
+/*----- Регистрация -----*/
+.registration-box-1, .registration-box-2, .registration-box-3, .registration-box-4, .registration-box-5{
+	height: 270px;
+	margin-top: 50px;
+}
+
+.registration-box-1{
+	display: block;
+}
+.registration-box-2, .registration-box-3, .registration-box-4, .registration-box-5{
+	display: none;
+}
+.registration-step-hr{
+	border: 1.5px solid #6eb690;
+	background-color: #6eb690;
+	position: relative;
+	top: 20px;
+	z-index: 10;
+}
+.registration-step-box{
+	width: 240px;
+	margin: 0px auto 0px;
+}
+.registration-step-1, .registration-step-2, .registration-step-3, .registration-step-4{
+	float: left;
+	box-sizing: border-box;
+	padding: 5px;
+	font-size: 23px;
+	border-radius: 50%;
+	border: 2px solid #6eb690;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	margin: 0px 10px;
+	z-index: 20;
+	position: relative;
+	background-color: #fff;
+	cursor: pointer;
+	transition: color 0.3s ease, background-color 0.3s ease;
+}
+.registration-step-1.active, .registration-step-2.active, .registration-step-3.active, .registration-step-4.active{
+	color: #fff;
+	background-color: #6eb690;
+}

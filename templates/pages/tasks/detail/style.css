@@ -1,0 +1,354 @@
+.task-page{
+	width: calc(100% - 120px);
+	margin-left: 120px;
+}
+.task-form1{
+	float: left;
+	width: calc(100% - 320px);
+}
+.task-form2{
+	float: right;
+	width: 290px;
+	margin-right: 10px;
+	margin-left: 20px;
+	box-sizing: border-box;
+	padding: 0 0 20px 20px;
+	border-left: 2px solid #6eb690;
+	border-bottom: 2px solid #6eb690;
+}
+.task-title{
+	display: block;
+	width: 100%;
+	font-size: 26px;
+	padding: 0px 10px;
+	border: none;
+	box-sizing: border-box;
+	border-bottom: 2px solid silver;
+	margin-bottom: 20px;
+}
+.task-text{
+	display: block;
+	width: 100%;
+	min-height: 200px;
+	border: none;
+	font-size: 16px;
+	box-sizing: border-box;
+	padding: 10px;
+	border-left: 2px solid silver;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+.task-subtask-box{
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.task-executor-box{
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.task-executor-select-box{
+	display: table;
+	margin-top: 5px;
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+}
+.task-executor-img-box{
+	display: table-cell;
+}
+.task-executor-img-box > img{
+	width: 40px;
+	height: 40px;
+}
+.task-executor-name-box{
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+
+.task-deadline-box{
+	display: block;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+	border-bottom: 2px solid silver;
+	margin-bottom: 5px;
+}
+.task-deadline-day{
+	display: block;
+	width: 100px;
+	float: left;
+	font-size: 64px;
+	text-align: center;
+	position: relative;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+.task-deadline-month-box{
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	width: calc(100% - 120px);
+	margin-left: 20px;
+	float: left;
+}
+.task-deadline-month{
+	display: block;
+	font-size: 20px;
+	box-sizing: border-box;
+	padding-top: 8px;
+	margin-bottom: 5px;
+}
+.task-deadline-time{
+	display: block;
+	font-size: 26px;
+	box-sizing: border-box;
+}
+.task-date-time-box{
+	margin-bottom: 20px;
+	text-align: center;
+	color: silver;
+	font-size: 16px;
+}
+
+
+.task-control-box{
+	text-align: center;
+	color: red;
+	box-sizing: border-box;
+	position: relative;
+	margin-top: 20px;
+}
+.task-control-box>i{
+	font-size: 20px;
+}
+/* ----- Кнопки ----- */
+.task-buttons-box{
+	margin: 40px auto 20px;
+	box-sizing: border-box;
+	padding-bottom: 20px;
+	border-bottom: 2px solid silver;
+}
+.task-buttons-close-task{
+	float: left;
+	display: block;
+	width: 200px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-align: center;
+	border: 1.5px solid #6eb690;
+	background-color: inherit;
+	cursor: pointer;
+	margin-right: 20px;
+}
+.task-buttons-back{
+	float: right;
+	width: 100px;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	color: silver;
+}
+.task-buttons-edit-task{
+	float: left;
+	display: inline-block;
+	width: 100px;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	color: silver;
+	transition: all 0.3s ease;
+}
+.task-buttons-edit-task:hover{
+	color: red;
+}
+.task-buttons-wait-task{
+	float: left;
+	display: inline-block;
+	width: 100px;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	color: silver;
+	margin-right: 20px;
+	transition: all 0.3s ease;
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+}
+.task-buttons-wait-task:hover{
+	color: red;
+}
+
+/* ----- чекбоксы ----- */
+.checkbox-subtask{
+	display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 35px;
+    margin-right: 15px;
+    font-size: 20px;
+    display: none;
+}
+.checkbox-label-subtask{
+	margin-left: 40px;
+	cursor: pointer;
+	color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.checkbox-label-subtask:before {
+    content: "✔";
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    width: 23px;
+    height: 23px;
+    margin-right: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    top: -4px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+.checkbox-subtask:checked + .checkbox-label-subtask:before {
+    content: "✔";
+    color: #6eb690;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+    border-color: #6eb690;
+}
+.checkbox-subtask:checked + .checkbox-label-subtask{
+	color: silver;
+	text-decoration: line-through;
+}
+
+
+/* ----- Комментарии ----- */
+.task-comments-section{
+	margin-bottom: 40px;
+}
+.task-comments-hr{
+	width: 665px;
+	border: none;
+	border-bottom: 2px dotted silver;
+	margin-bottom: 20px;
+}
+.task-comments-history-button{
+	font-size: 24px;
+	margin-bottom: 20px;
+	border: none;
+	background-color: inherit;
+	color: silver;
+	margin-right: 50px;
+	cursor: pointer;
+}
+.task-comments-history-button.active{
+	color: #000;
+}
+.task-comment-item{
+	margin-bottom: 20px;
+}
+.task-comment-item-left{
+	float: left;
+	width: 65px;
+	box-sizing: border-box;
+	padding-right: 15px;
+}
+.task-comment-item-left > a > img{
+	width: 55px;
+}
+.task-comment-item-right{
+	float: left;
+	max-width: 600px;
+	width: calc(100% - 70px);
+	box-sizing: border-box;
+	border-left: 1.5px solid #6eb690;
+	min-height: 50px;
+	padding: 0px 10px 10px;
+}
+.task-comment-item-name-box{
+	margin-bottom: 10px;
+}
+.task-comment-item-date{
+	float: right;
+	color: silver
+}
+.task-comment-item-name{
+	color: #000;
+}
+.task-comment-item-close{
+	color: silver;
+	transition: all 0.3s ease;
+	float: right;
+	margin-left: 10px;
+}
+.task-comment-item-close:hover{
+	color: red;
+}
+
+/* ----- Добавление комментария ----- */
+.task-add-comments-form-text{
+	display: block;
+	max-width: 500px;
+	width: 100%;
+	height: 120px;
+	font-size: 16px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: none;
+	border-left: 2px solid silver;
+	margin-bottom: 10px;
+	resize: none;
+	transition: all 0.3s ease;
+}
+.task-add-comments-form-text:focus{
+	border-color: #6eb690;
+}
+.task-add-comments-form-submit{
+	display: block;
+	background-color: inherit;
+	border: 1.5px solid #6eb690;
+	padding: 5px 10px;
+	color: #6eb690;
+	font-size: 16px;
+}
+.task-add-comments-form-num-text{
+	margin-bottom: 20px;
+	color: silver;
+	font-size: 12px;
+}
+
+/* ------ История ------ */
+.task-history-section{
+	margin-bottom: 40px;
+}
+.task-history-table td{
+	border-bottom: 1px solid silver;
+}
+.task-history-table-name{
+	padding: 5px 20px 5px 0px;
+
+}
+.task-history-table-row{
+	padding: 5px 20px;
+	font-size: 24px;
+	color: silver;
+}
+.task-history-table-event{
+	padding: 5px 20px 5px 0px;
+}
+.task-history-table-date{
+	padding: 5px 0px;
+	color: silver;
+}

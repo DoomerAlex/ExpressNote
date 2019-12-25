@@ -1,0 +1,159 @@
+.group-page{
+	display: block;
+	box-sizing: border-box;
+	margin-left: 120px;
+}
+
+.group-top-menu-box{
+	width: 100%;
+}
+.group-top-menu{
+	width: 100%;
+	list-style-type: none;
+	display: block;
+	height: 38px;
+}
+.group-top-menu > li{
+	display: block;
+	float: left;
+}
+.group-top-menu > li > a{
+	display: block;
+	font-size: 20px;
+	padding: 5px 20px;
+	box-sizing: border-box; 
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #6eb690;
+	color: silver;
+}
+.group-top-menu > li > .active{
+	border: 2px solid #6eb690;
+	border-bottom: 2px solid #fff;
+	color: #6eb690;
+}
+
+
+.group-user-table{
+	display: table;
+	width: 700px;
+	border-spacing: 0;
+}
+.group-user-row{
+	display: table-row;
+}
+.group-user-colum{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 5px 0px;
+	border-bottom: 1px solid silver;
+}
+.group-user-table-avatar-box{
+	width: 70px;
+}
+.group-user-table-avatar-box > img{
+	width: 50px;
+	height: 50px;
+	display: block;
+}
+
+.group-user-table-massage-link{
+	font-size: 24px;
+	color: silver;
+	transition: all 0.3s ease;
+	display: block;
+	padding: 0 5px;
+}
+.group-user-table-massage-link:hover{
+	color: #6eb690;
+}
+.group-user-table-task-link{
+	font-size: 24px;
+	color: silver;
+	transition: all 0.3s ease;
+	display: block;
+	padding: 0 5px;
+}
+.group-user-table-task-link:hover{
+	color: #6eb690;
+}
+.group-user-table-delete-user{
+	font-size: 24px;
+	color: silver;
+	display: block;
+	padding: 0 5px;
+	transition: all 0.3s ease;
+}
+.group-user-table-delete-user:hover{
+	color: red;
+}
+.change-user-access{
+	font-size: 16px;
+	border: none;
+	padding: 10px 5px;
+}
+.change-user-access:focus{
+	outline: none;
+}
+.group-user-table-delete-box{
+	border-bottom: none;
+}
+
+.new-group-h2{
+	margin: 20px auto; 
+}
+.user-box-item{
+	display: block;
+    float: left;
+    width: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 180px;
+    overflow: hidden;
+    border: 1.5px solid #fff;
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-box-item-img-box{
+	
+}
+.user-box-item-img-box > img{
+	display: block;
+    margin: 0px auto 10px;
+    width: 100px;
+    height: 100px;
+}
+.user-box-item-name-box{
+	text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000;
+    height: 42px;
+
+}
+/* когда выбрано */
+.user-box-item.active{
+	border-color: #6eb690;
+
+}
+.user-box-item.active .user-box-item-name-box{
+	
+}
+
+.new-group-submit-button{
+	display: inline-block;
+	text-align: center;
+	padding: 10px 30px;
+	box-sizing: border-box;
+	border: 1.5px solid #6eb690;
+	color: #000;
+	background-color: inherit;
+	font-size: 18px;
+}
+
+.warning-massage{
+	margin: 20px auto;
+	font-size: 20px; 
+	color: red;
+}

@@ -1,0 +1,40 @@
+.profile-content-page{
+	width: calc(100% - 120px);
+	margin-left: 120px;
+	box-sizing: border-box;
+}
+.profile-avatar-box{
+	float: left;
+	width: 300px;
+	margin-right: 50px;
+}
+.profile-name{
+	float: right;
+	width: calc(100% - 350px);
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.profile-contakt-mail > i,
+.profile-contakt-phone > i{
+	color: #6eb690;
+}
+.profile-contakt-mail,
+.profile-contakt-phone{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.profile-contakt-title{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.exit-button{
+	display: block;
+	width: 60%;
+	text-align: center;
+	border: 1.5px solid red;
+	margin: 10px auto 0;
+	box-sizing: border-box;
+	padding: 10px;
+	color: red;
+	font-size: 20px;
+}
